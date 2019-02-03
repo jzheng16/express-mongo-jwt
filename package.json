@@ -1,0 +1,27 @@
+{
+  "name": "express-mongo-jwt",
+  "version": "1.0.0",
+  "description": "A simple NodeJS boilerplate with express, JWT authentication, and mongoose.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "nodemon index.js"
+  },
+  "keywords": [
+    "express mongoose mongo jwt authentication"
+  ],
+  "author": "Joey Zheng",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
