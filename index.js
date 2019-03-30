@@ -1,13 +1,16 @@
 const express = require('express');
+const cors = require('cors');
+
 const db = require('./db/index');
 const User = require('./db/models/user');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
-
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 
 app.use('/api', require('./routes'));
 
